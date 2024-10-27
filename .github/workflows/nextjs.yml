@@ -12,13 +12,11 @@ on:
   # Enables manual triggering of this workflow from the Actions tab
   workflow_dispatch:
 
-# Configures permissions for the GITHUB_TOKEN for deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Ensures that only one deployment runs at a time, allowing in-progress runs to complete
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -30,6 +28,9 @@ jobs:
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v4
+
+      - name: Install pnpm
+        run: npm install -g pnpm
 
       - name: Detect package manager
         id: detect-package-manager
@@ -63,7 +64,6 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
         with:
-          # Automatically handles basePath and image optimization for Next.js
           static_site_generator: next
 
       - name: Restore cache
@@ -71,9 +71,7 @@ jobs:
         with:
           path: |
             .next/cache
-          # Generates a new cache whenever pnpm-lock.yaml or source files change
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
-          # If source files changed but lock file didn't, rebuild from a prior cache
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
 
