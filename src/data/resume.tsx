@@ -231,5 +231,22 @@ export const DATA = {
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
       links: []
     },
+    {
+      title: "Decentrathon 2.0",
+      dates: "Oct 18-19, 2024",
+      location: "Central Asia",
+      description:
+        "The largest multivenue hackathon in Central Asia (50,000$ prize fund). We created The HealHunter An AI-driven telehealth SaaS for preliminary diagnosis.",
+      image:
+        "/dec.png",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
+      links: [
+        {
+          title: "Website",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://decentrathon.ai/",
+        },
+      ],
+    },
   ],
 } as const;
