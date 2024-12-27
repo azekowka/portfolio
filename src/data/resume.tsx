@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/aktobe",
   description:
     "a 16 year-old serial tech startup founder, aerospace & software engineer.",
-  summary: "A bit about me personally: Football fan. Podcast lover [n!, Outpeer, MOST Ventures, etc.]. Devoted admirer of George R. R. Martin's book series «A Song of Ice and Fire.»",
+  summary: "A bit personally: Football fan. Podcast lover [n!, Outpeer, MOST Ventures, etc.]. Devoted admirer of George R. R. Martin's book series «A Song of Ice and Fire.»",
   avatarUrl: "/azekowka.jpg",
   skills: [
     "React",
