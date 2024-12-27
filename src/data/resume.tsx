@@ -2,20 +2,21 @@ import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
-  name: "Aziz Gabitov",
+  name: "Abdulaziz Gabitov",
   initials: "AG",
-  url: "https://google.com",
+  url: "https://azekowka.vercel.app",
   location: "Aktobe, Kazakhstan",
   locationLink: "https://www.google.com/maps/place/aktobe",
   description:
-    "I'm a 16 year-old aerospace & software engineer, serial tech founder.",
-  summary: "Future Forbes Under30. Supporter of FC Barcelona since infancy. ...",
+    "a 16 year-old serial tech startup founder, aerospace & software engineer.",
+  summary: "A bit about me personally: Football fan. Podcast lover [n!, Outpeer, MOST Ventures, etc.]. Devoted admirer of George R. R. Martin's book series «A Song of Ice and Fire.»",
   avatarUrl: "/azekowka.jpg",
   skills: [
     "React",
     "Next.js",
-    "Typescript",
+    "TypeScript",
     "Node.js",
+    "Git",
     "Python",
     "Django",
     "FastAPI",
@@ -27,7 +28,8 @@ export const DATA = {
     "Matplotlib",
     "Tkinter",
     "PyGame",
-    "bs4",
+    "Scraping",
+    "OpenRocket"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -67,7 +69,7 @@ export const DATA = {
       href: "https://candydata-front-landing.vercel.app",
       badges: [],
       location: "",
-      title: "CEO & Founder",
+      title: "Executive Officer & Founder",
       logoUrl: "/",
       start: "Sep 2024",
       end: "Present",
@@ -79,12 +81,12 @@ export const DATA = {
       href: "",
       badges: [],
       location: "",
-      title: "COO & Engineer",
+      title: "Operating Officer & Engineer",
       logoUrl: "/aqylab.svg",
       start: "Sep 2024",
       end: "Present",
       description:
-        "Aqylab is a game-changing lab kit designed for hands-on chemistry experiments, perfectly aligned with school curriculums in Kazakhstan. We're disrupting traditional science education by bringing interactive, IoT-powered learning directly to students and institutes. My role is to develop the startup, participate in competitions, incubators and accelerators, apply for grant programs and sell the startup product.",
+        "Aqylab is an IoT-powered lab kit for interactive chemistry learning that turns learning into a game. Achieved 1st place in the Daryn Scientific Project Competition out of 100+ participants. Successfully implemented a pilot project for 450 users in AOO NIS. Won 1st place in the NURIS Hardware Challenge 3.0 and became a finalist in the Solve for Tomorrow by Samsung. Ranked in the top 40 out of 176 teams in Central Asia and the Caucasus in the TikTok Startup Academy. My role is to develop the startup, participate in competitions, incubators and accelerators, apply for grant programs and sell the product.",
     },   
     {
       company: "Genomix",
@@ -111,29 +113,17 @@ export const DATA = {
         "Taught lectures in the Python programming language for a group of 14 adults aged 18 to 45 years old who are seeking to gain new skills or even change their current profession to the IT field. 10 / 10 of my students achieved 'Junior Python developer' certificates under the TechOrda program from the largest international technology park of IT startups in Central Asia, AstanaHub. Conducted a total of 90 hours of lectures.",
     },
     {
-      company: "The New York Academy of Sciences",
-      href: "",
-      badges: [],
-      location: "",
-      title: "Research Scholar",
-      logoUrl: "/nyas.png",
-      start: "Sep 2023",
-      end: "Nov 2023",
-      description:
-        "Developed an adaptive educational tool for the cognitive classroom to improve learning and create more inclusive, equitable and accessible educational experiences. The project completed by my team was highly appreciated by NEOM. Managed the team of 5 peers from the countries of the USA, Uzbekistan and Kyrgyzstan.",
-    },
-    {
-      company: "Stargate Rocketry CLub",
+      company: "Stargate Rocketry Club",
       href: "",
       badges: [],
       location: "",
       title: "Founder & Chief Engineer",
-      logoUrl: "",
+      logoUrl: "https://qtap.kz/assets/img-users/658f200741db2.png",
       start: "Apr 2022",
       end: "Present",
       description:
-        "Demonstrated activities of the club to the US Ambassador to Kazakhstan Daniel N. Rosenblum, CEO of Chevron Eurasia Derek Magness (23.06.2023). Received $1,000 sponsorship from Chevron Corporation to implement 3 projects involving the assembly and launch of model rockets. Invited 2 astrophysicists from Heriot-Watt University as the guest speakers (30 people came to listen to a lecture about the evolution of stars). Conducted 3 courses in rocket science and 2 courses in astrophysics (50+ people enrolled).",
-    },
+        "Demonstrated rockets of the club to the US Ambassador to Kazakhstan Daniel N. Rosenblum, CEO of Chevron Eurasia Derek Magness (23.06.2023). Received ≈$1,000 sponsorship from Chevron Corporation to implement 3 projects involving the assembly and launch of model rockets. Invited 2 astrophysicists from Heriot-Watt University as the guest speakers (30 people came to listen to a lecture about the evolution of stars). Conducted 3 courses in rocket science and 2 courses in astrophysics (50+ people enrolled).",
+    }
   ],
   education: [
     {
@@ -153,6 +143,14 @@ export const DATA = {
       end: "Nov 2024",
     },
     {
+      school: "The New York Academy of Sciences",
+      href: "",
+      degree: "Developed an adaptive educational tool for the cognitive classroom to improve learning and create more inclusive, equitable and accessible educational experiences. The project completed by my team was highly appreciated by NEOM. Managed the team of 5 peers from the countries of the USA, Uzbekistan and Kyrgyzstan.",
+      logoUrl: "/nyas.png",
+      start: "Sep 2023",
+      end: "Nov 2023",
+    },
+    {
       school: "Samsung Innovation Campus'23",
       href: "",
       degree: "Learned all the basic concepts of the Python language, mastered sequences, functions, classes, data structures, sorting algorithms, dynamic programming. Worked with the following libraries: Pandas, NumPy, Seaborn, MatplotLib, Math, PyGame, Folium.",
@@ -165,25 +163,60 @@ export const DATA = {
   
   hackathons: [
     {
-      title: "KazRockets Satellite Design Tournament",
-      dates: "April 12, 2024",
-      location: "Gharysh Sapary, Astana, Kazakhstan",
+      title: "NURIS Hardware Challenge 4.0 - AeroSpace Tech",
+      dates: "December 13, 2024",
+      location: "Nazarbayev University",
       description:
-        "Awarded 1st place at the Republican Hackathon for assembling small satellites, supported by Nazarbayev University Research and Innovation System, National Space Center, and the Ministry of Digital Development, Innovation and Aerospace Industry. (out of 250 participants)",
+        "Awarded 1st place & 500,000 tenge cash prize for the creation of the fire forecasting machine learning model based on the CNN.",
       image:
-        "/kazrockets.png",
+        "https://static.tildacdn.pro/tild3163-3235-4364-b437-356462306130/NURIS_logo_new__-_Co.png",
       win: "",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
       links: [
         {
-          title: "Press release",
+          title: "Website",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://astanahub.com/ru/event/kazrockets-satellite-design-tournament-2024/",
+          href: "https://nuris.nu.edu.kz/hardwarechallenge4",
+        }
+      ],
+    },
+    {
+      title: "BICAP Hackathon",
+      dates: "December 12, 2024",
+      location: "Astana, Kazakhstan",
+      description:
+        "Awarded 2nd place for the creation of the EventHunt - a smart platform for tracking city events.",
+      image:
+        "https://optim.tildacdn.pro/tild6630-3864-4235-a630-393232373239/-/resize/90x/-/format/webp/cap.png",
+      win: "",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
+      links: [
+        {
+          title: "Website",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://capedu.kz/bicaprus",
+        }
+      ],
+    },
+    {
+      title: "Decentrathon 2.0",
+      dates: "Oct 18-19, 2024",
+      location: "Central Asia",
+      description:
+        "3rd place (out of 426 teams) and 500,000 tenge cash prize in the AI ​​track! The largest multivenue hackathon in Central Asia (50,000$ prize fund). We created The HealHunter an AI-driven telehealth SaaS for preliminary diagnosis.",
+      image:
+        "/dec.png",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
+      links: [
+        {
+          title: "Website",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://decentrathon.ai/",
         },
         {
-          title: "Winners",
+          title: "LinkedIn",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://www.instagram.com/kazrockets/p/C48r0jONrfi/?__d=1%3Futm_source%3Dig_embed&img_index=1",
+          href: "https://www.linkedin.com/posts/azizgabitov_3-%D0%BC%D0%B5%D1%81%D1%82%D0%BE-%D0%B8%D0%B7-426-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4-%D0%BD%D0%B0-decentrathon-20-activity-7270821607659446273-RHWL/",
         },
       ],
     },
@@ -221,6 +254,29 @@ export const DATA = {
       ],
     },
     {
+      title: "KazRockets Satellite Design Tournament",
+      dates: "April 12, 2024",
+      location: "Gharysh Sapary, Astana, Kazakhstan",
+      description:
+        "Awarded 1st place at the Republican Hackathon for assembling small satellites, supported by Nazarbayev University Research and Innovation System, National Space Center, and the Ministry of Digital Development, Innovation and Aerospace Industry. (out of 250 participants)",
+      image:
+        "/kazrockets.png",
+      win: "",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
+      links: [
+        {
+          title: "Press release",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://astanahub.com/ru/event/kazrockets-satellite-design-tournament-2024/",
+        },
+        {
+          title: "Winners",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://www.instagram.com/kazrockets/p/C48r0jONrfi/?__d=1%3Futm_source%3Dig_embed&img_index=1",
+        },
+      ],
+    },
+    {
       title: "XXIII Kazakhstan Bilim Olympiad in Physics",
       dates: "2021",
       location: "Remote",
@@ -230,23 +286,6 @@ export const DATA = {
         "/bil.jpeg",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
       links: []
-    },
-    {
-      title: "Decentrathon 2.0",
-      dates: "Oct 18-19, 2024",
-      location: "Central Asia",
-      description:
-        "The largest multivenue hackathon in Central Asia (50,000$ prize fund). We created The HealHunter An AI-driven telehealth SaaS for preliminary diagnosis.",
-      image:
-        "/dec.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Website",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://decentrathon.ai/",
-        },
-      ],
-    },
+    }
   ],
 } as const;
