@@ -14,7 +14,7 @@ interface BlurFadeProps {
   delay?: number;
   yOffset?: number;
   inView?: boolean;
-  inViewMargin?: string; // margin is a string type, like "-50px"
+  inViewMargin?: string | number; // Update to accept string | number
   blur?: string;
 }
 
@@ -26,16 +26,13 @@ const BlurFade = ({
   delay = 0,
   yOffset = 6,
   inView = false,
-  inViewMargin = "-50px",  // default value is "-50px"
+  inViewMargin = "-50px", // default to a string or number
   blur = "6px",
 }: BlurFadeProps) => {
   const ref = useRef(null);
 
-  // Here, use `inViewMargin` which is passed as a string
-  const inViewResult = useInView(ref, {
-    once: true,
-    margin: inViewMargin as string, // Ensure it's typed correctly
-  });
+  // No need to cast to string anymore if the type is defined correctly
+  const inViewResult = useInView(ref, { once: true, margin: inViewMargin });
 
   const isInView = !inView || inViewResult;
 
