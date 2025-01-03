@@ -58,7 +58,7 @@ export const DATA = {
         url: "#gabjtov@gmail.com",
         icon: Icons.email,
 
-        navbar: false,
+        navbar: true,
       },
     },
   },
