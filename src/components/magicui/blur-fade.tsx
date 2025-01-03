@@ -1,4 +1,4 @@
-"use client";
+"use client"; // Ensure this is present
 
 import { AnimatePresence, motion, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
@@ -14,7 +14,7 @@ interface BlurFadeProps {
   delay?: number;
   yOffset?: number;
   inView?: boolean;
-  inViewMargin?: string | number; // Update to accept string | number
+  inViewMargin?: string | number; // Updated to accept string | number
   blur?: string;
 }
 
@@ -26,13 +26,13 @@ const BlurFade = ({
   delay = 0,
   yOffset = 6,
   inView = false,
-  inViewMargin = "-50px", // default to a string or number
+  inViewMargin = "-50px", // This can be a string or number (valid margin)
   blur = "6px",
 }: BlurFadeProps) => {
   const ref = useRef(null);
 
-  // No need to cast to string anymore if the type is defined correctly
-  const inViewResult = useInView(ref, { once: true, margin: inViewMargin });
+  // Explicitly type margin as string or number which is acceptable by `useInView`
+  const inViewResult = useInView(ref, { once: true, margin: inViewMargin as any });
 
   const isInView = !inView || inViewResult;
 
