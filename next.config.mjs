@@ -2,7 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export', 
-  // Add any other configurations you might need here
+  images: {
+    unoptimized: true, // Disables Next.js image optimization for static export
+  },
 };
 
 export default nextConfig;

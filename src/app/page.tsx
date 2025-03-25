@@ -107,7 +107,7 @@ export default function Page() {
       <section id="skills" className="mt-16">
         <div className="mx-auto w-full max-w-2xl">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold mb-6">Skills</h2>
+            <h2 className="text-xl font-bold mb-6">My Tech Stack</h2>
           </BlurFade>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -176,15 +176,15 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  My Projects
+                  My Portfolio
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Check out my latest work
+                  From Idea to Reality
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
-                  favorites.
+                  websites to complex web applications. Here are a few of them. 
+                  Currently working on a ride-sharing app.
                 </p>
               </div>
             </div>
