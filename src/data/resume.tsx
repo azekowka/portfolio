@@ -275,6 +275,24 @@ export const DATA = {
   
   hackathons: [
     {
+      title: "Infomatrix Asia 2025",
+      dates: "March 29-31, 2025",
+      location: "International competition",
+      description:
+        "Honored with the Gold Medal in the AI Programming category (top 10%). Received a full-ride grant at the Energy University.",
+      image:
+        "https://infomatrix.asia/2025/logo.png",
+      win: "",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
+      links: [
+        {
+          title: "Website",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://infomatrix.asia/",
+        }
+      ],
+    },
+    {
       title: "NURIS Hardware Challenge 4.0 - AeroSpace Tech",
       dates: "December 13, 2024",
       location: "Nazarbayev University",
