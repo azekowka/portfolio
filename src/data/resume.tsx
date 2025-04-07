@@ -271,9 +271,61 @@ export const DATA = {
       video:
         "",
     },
+    {
+      title: "Smart Attendance System",
+      href: "",
+      dates: "Apr 2025",
+      active: true,
+      description:
+        "Implemented a Together AI backed chatbot to help students dealing with late coming, and OpenCV-based student face recognition model",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "FastAPI",
+        "PostgreSQL",
+        "TailwindCSS",
+        "shadcn/ui",
+        "Together AI",
+        "OpenCV",
+        "Helicone",
+        "SERP API",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://ais-hack.vercel.app/student/ai",
+          icon: <Icons.nextjs className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/azekowka/ais-hack",
+          icon: <Icons.github className="size-3" />,
+        }, 
+      ],
+      image: "/ais.png",
+      video: "",
+    },
   ],
   
   hackathons: [
+    {
+      title: "AIS Hackathon 2025",
+      dates: "April 4-6, 2025",
+      location: "Aqtobe, Kazakhstan",
+      description:
+        "Achieved 1st place and a generous cash prize for the development of a Together AI backed chatbot to help students dealing with late coming, and OpenCV-based student face recognition model.",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxsYTwYP1z8tgxt98apiTju5dgee5D9T8j5A&s",
+      win: "",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
+      links: [
+        {
+          title: "Website",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://aishack.kz/",
+        }
+      ],
+    },
     {
       title: "Infomatrix Asia 2025",
       dates: "March 29-31, 2025",
