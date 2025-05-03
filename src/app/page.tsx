@@ -179,12 +179,12 @@ export default function Page() {
                   My Portfolio
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  From Idea to Reality
+                  Idea to MVP
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of them. 
-                  Currently working on a ride-sharing app.
+                  landings to complex web applications. Here are a few of them. 
+                  
                 </p>
               </div>
             </div>

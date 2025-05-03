@@ -9,7 +9,7 @@ export const DATA = {
   linkedin: "azizgabitov",
   github: "azekowka",
   description:
-    "a 16-year-old serial tech startup founder, aerospace and full-stack software engineer.",
+    "a 17-year-old software engineer, ex-aerospace engineer, and entrepreneur",
   summary: "A bit personally: Football fan. Podcast lover [n!, Outpeer, MOST Ventures, etc.]. Devoted admirer of George R. R. Martin's book series «A Song of Ice and Fire.»",
   avatarUrl: "https://media.licdn.com/dms/image/v2/D4E03AQEUP3GvMP6Neg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1690810642419?e=1748476800&v=beta&t=CSiwdYmJ9MB1elfK2aF1ERvjScSeAh4IfxNP8Uhr0sc",
   frontend: [
