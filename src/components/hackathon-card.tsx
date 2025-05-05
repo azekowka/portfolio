@@ -23,8 +23,28 @@ export function HackathonCard({
   image,
   links,
 }: Props) {
+  // Function to determine medal emoji based on description
+  const getMedalEmoji = (description: string) => {
+    const lowerDesc = description.toLowerCase();
+    if (lowerDesc.includes("1st place") || lowerDesc.includes("gold medal")) {
+      return "🥇";
+    } else if (lowerDesc.includes("2nd place") || lowerDesc.includes("silver medal")) {
+      return "🥈";
+    } else if (lowerDesc.includes("3rd place") || lowerDesc.includes("bronze medal")) {
+      return "🥉";
+    }
+    return null;
+  };
+
+  const medalEmoji = getMedalEmoji(description);
+
   return (
     <li className="relative ml-10 py-4">
+      {medalEmoji && (
+        <div className="absolute top-2 right-2 text-lg z-10">
+          {medalEmoji}
+        </div>
+      )}
       <div className="absolute -left-16 top-2 flex items-center justify-center bg-white rounded-full">
         <Avatar className="border size-12 m-auto">
           <AvatarImage src={image} alt={title} className="object-contain" />
