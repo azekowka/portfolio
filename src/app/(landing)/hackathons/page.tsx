@@ -38,9 +38,6 @@ export default function TIL() {
     <div className="mt-10 max-w-2xl">
       <div className="text-center py-12">
         <h2 className="text-2xl font-bold mb-4">Competitions & Hackathons</h2>
-        <p className="text-muted-foreground">
-          This section will showcase my participation in competitive programming contests and hackathons.
-        </p>
       </div>
     </div>
   );

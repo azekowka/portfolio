@@ -38,19 +38,7 @@ export default function Github() {
   return (
     <div className="mt-10 ">
           <div className="pb-12 ">
-              <h1 className="text-3xl font-bold mb-6">Github Repositories</h1>
-              <p className="text-lg mb-8">My open source work and code repositories.</p>
-              
-              <div className="space-y-4">
-                <div className="border rounded-lg p-4">
-                  <h3 className="text-xl font-semibold mb-2">Repository 1</h3>
-                  <p className="text-gray-600">Description of repository</p>
-                </div>
-                <div className="border rounded-lg p-4">
-                  <h3 className="text-xl font-semibold mb-2">Repository 2</h3>
-                  <p className="text-gray-600">Description of repository</p>
-                </div>
-              </div>
+              <h1 className="text-3xl font-bold mb-6">Github</h1>
         </div>
     </div>
   );
