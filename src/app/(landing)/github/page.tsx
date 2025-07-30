@@ -1,5 +1,6 @@
 import { siteConfig } from "@/config/site.config";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: `Github | ${siteConfig.name} | ${siteConfig.creator.name}`,
@@ -47,9 +48,11 @@ export default function Github() {
         <div className="mb-8">
           <h2 className="text-xl font-semibold mb-4">Contribution Activity (815)</h2>
           <div className="border rounded-lg p-4 bg-card">
-            <img
+            <Image
               src="https://ghchart.rshah.org/azekowka"
               alt="GitHub Contribution Chart"
+              width={800}
+              height={200}
               className="w-full rounded-lg"
             />
           </div>
@@ -59,9 +62,11 @@ export default function Github() {
         <div className="mb-8">
           <h2 className="text-xl font-semibold mb-4">Contribution Snake</h2>
           <div className="flex justify-center bg-card border rounded-lg p-4">
-            <img
+            <Image
               src="https://raw.githubusercontent.com/azekowka/azekowka/output/github-snake-dark.svg"
               alt="GitHub Snake Animation"
+              width={1200}
+              height={400}
               className="w-full max-w-4xl"
             />
           </div>
