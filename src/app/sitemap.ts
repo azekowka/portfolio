@@ -9,12 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 1,
     },
-    {
-      url: `${siteConfig.siteUrl}/blogs`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1,
-    },
+
     {
       url: `${siteConfig.siteUrl}/experience`,
       lastModified: new Date(),
@@ -22,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-      url: `${siteConfig.siteUrl}/til`,
+      url: `${siteConfig.siteUrl}/hackathons`,
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.5,

@@ -158,6 +158,6 @@ export const mdxComponents = {
       {...props}
     />
   ),
-  Image: (props: ImageProps) => <Image {...props} alt="blog image" />,
+  Image: (props: ImageProps) => <Image {...props} alt="content image" />,
   Callout,
 };

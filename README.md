@@ -10,9 +10,7 @@ You can check the live demo of this website [azekowka.me](https://azekowka.me)
 
 ## Features
 
-- MDX blog posts
 - MDX projects & other content
-- RSS feed for blog posts
 - Both light and dark mode
 - SEO friendly (scoring 100 on Lighthouse)
 - Responsive design (mobile friendly)
@@ -53,13 +51,11 @@ bun velite dev
 
 Configure `velite.config.ts` to add or modify your collection of content
 
-Write your blog posts, projects, tils in the `content` directory.
+Write your projects, tils in the `content` directory.
 
 ```bash
  root
 +├── content
-+│   ├── blogs
-+│   │   └── hello-world.mdx
 +│   ├── projects
 +│   │   └── project.mdx
 +│   ├── tils
@@ -83,7 +79,7 @@ Read the [velite docs](https://velite.js.org/guide/quick-start) for more informa
 
 - Configure SEO information in `src/config/site.config.ts`
 - Configure social media information in `src/config/site.config.ts` & `src/config/portfolio.config.ts`
-- Configure blog post SEO generation in `src/app/blogs/[slug]/page.tsx`
+
 - Configure page SEO generation in their respective pages in `src/app`
 - Configure sitemap file in `src/app/sitemap.ts`.
 - Configure browser crawlable routes in `src/app/robots.ts`.
@@ -112,5 +108,5 @@ export default function RootLayout(...) {
 
 ## Deployment
 
-The easiest way to deploy this website is to use Vercel. 
+The easiest way to deploy this website is to use Vercel.
 

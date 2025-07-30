@@ -1,11 +1,10 @@
 {
-  "name": "dev.gxuri.in",
+  "name": "azekowka.me",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "velite && next dev",
-    "build": "velite && bun run rss:build && next build",
-    "rss:build": "bun run rss.ts",
+    "build": "velite && next build",
     "start": "velite && next start",
     "lint": "next lint"
   },

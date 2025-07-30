@@ -12,25 +12,7 @@ const computedFields = <T extends { slug: string }>(data: T) => ({
   slugAsParams: data.slug.split("/").slice(1).join("/"),
 });
 
-export const blogs = defineCollection({
-  name: "Blog",
-  pattern: "blogs/**/*.mdx",
-  schema: s
-    .object({
-      slug: s.path(),
-      title: s.string().max(99),
-      description: s.string().max(999),
-      date: s.isodate(),
-      published: s.boolean().default(true),
-      tags: s.array(s.string()),
-      body: s.mdx(),
-      image: s.image(),
-      imageDark: s.image(),
-      toc: s.toc(),
-      author: s.string(),
-    })
-    .transform(computedFields),
-});
+
 
 export const designs = defineCollection({
   name: "Design",
@@ -120,7 +102,7 @@ export default defineConfig({
     name: "[name]-[hash:6].[ext]",
     clean: true,
   },
-  collections: { blogs, authors, pages, tils, projects, designs },
+  collections: { authors, pages, tils, projects, designs },
   mdx: {
     rehypePlugins: [
       rehypeSlug,
