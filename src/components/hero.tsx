@@ -24,22 +24,26 @@ export default function Hero() {
         {portfolioConfig.tagline} <span className="sr-only">tagline</span>
       </h3>
       <p className="my-6 max-w-2xl text-foreground/80">
-        Hey there 👋 I&apos;m Gurvinder Singh a.k.a Gxuri - I don&apos;t have a niche, I&apos;m a{" "}
+        Hey there 👋 I&apos;m Aziz Gabitov - I&apos;m a passionate{" "}
         <a
           href="#"
           className="text-foreground font-semibold hover:underline"
         >
-          generalist
-        </a>. I work on web, mobile, desktop, server, embedded systems, IoT, blockchain, applied AI.
-        I&apos;ve worked with clients like{" "}
+          Software Engineer
+        </a>{" "}specializing in full-stack development. I work with modern web technologies, mobile applications, and backend systems.
+        I love creating{" "}
         <a
-          href="https://apple.com"
-          target="_blank"
+          href="#"
           className="text-foreground font-semibold hover:underline"
         >
-          Apple Inc.
-        </a>.
-         I love Modern UI/UX, Computer Science, and creating elegant solutions to complex problems.
+          innovative solutions
+        </a>{" "}and building user-friendly applications that solve real-world problems. I&apos;m open to{" "}
+        <a
+          href="#"
+          className="text-foreground font-semibold hover:underline"
+        >
+          part-time, full-time, or project-based
+        </a>{" "}opportunities - let&apos;s discuss it!
         <span className="sr-only">bio</span>
       </p>
       <Socials />
