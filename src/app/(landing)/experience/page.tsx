@@ -71,13 +71,22 @@ const Experience = ({ experience }: { experience: ExperienceType }) => {
     <div>
       <div className="flex justify-between flex-wrap">
         <div className="font-semibold flex flex-wrap items-center gap-1 md:gap-2">
-          <a
-            href={experience.company.url}
-            target="_blank"
-            className="hover:underline font-heading text-lg"
-          >
-            {experience.company.name}
-          </a>
+          <div className="flex items-center gap-2">
+            {experience.company.image && (
+              <img
+                src={experience.company.image}
+                alt={`${experience.company.name} logo`}
+                className="w-6 h-6 rounded-full object-cover"
+              />
+            )}
+            <a
+              href={experience.company.url}
+              target="_blank"
+              className="hover:underline font-heading text-lg"
+            >
+              {experience.company.name}
+            </a>
+          </div>
           <span className="text-xs px-2 py-1 bg-secondary rounded cursor-default">
             {experience.employmentType}
           </span>

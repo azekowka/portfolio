@@ -7,6 +7,7 @@ export const experiencesConfig: Experience[] = [
     company: {
       name: "Self-employed",
       url: "#",
+      image: "https://www.citypng.com/public/uploads/preview/upwork-round-black-and-white-logo-icon-735811696609924y4knq1epak.png",
     },
     location: {
       name: "Remote",
@@ -25,6 +26,7 @@ export const experiencesConfig: Experience[] = [
     company: {
       name: "nFactorial Incubator (Tarly AI)",
       url: "https://projects.nfactorial.school/year/2025",
+      image: "https://framerusercontent.com/assets/lX5QcegD928dZZ7u51ccCsTJHU.png",
     },
     location: {
       name: "Almaty, Kazakhstan",
@@ -51,6 +53,7 @@ export const experiencesConfig: Experience[] = [
     company: {
       name: "Baishev University (Tech Orda)",
       url: "#",
+      image: "https://site.bu.edu.kz/wp-content/uploads/2024/10/logo-1.png",
     },
     location: {
       name: "On-site",
