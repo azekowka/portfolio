@@ -14,19 +14,25 @@ frame-ancestors * data: blob:;
 `
  
 const nextConfig = {
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: [
-          {
-            key: 'Content-Security-Policy',
-            value: cspHeader.replace(/\n/g, ''),
-          },
-        ],
-      },
-    ]
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
   },
+  // Removed headers configuration to fix build issues with static export
+  // async headers() {
+  //   return [
+  //     {
+  //       source: '/(.*)',
+  //       headers: [
+  //         {
+  //           key: 'Content-Security-Policy',
+  //           value: cspHeader.replace(/\n/g, ''),
+  //         },
+  //       ],
+  //     },
+  //   ]
+  // },
 }
 
 export default nextConfig;
