@@ -1,14 +1,14 @@
 import type { Portfolio } from "@/types";
 
 export const portfolioConfig: Portfolio = {
-  name: "Gxuri",
-  tagline: "Bringing Ideas to Reality ✨",
-  resume: "https://drive.google.com/file/d/1eFS0Z60eOgAwcecNaXt-A0puYSRTNet5/view?usp=sharing",
+  name: "Aziz Gabitov",
+  tagline: "Software Engineer / Full-Stack",
+  resume: "https://drive.google.com/file/d/1Bk32fvAdvZOyfdzfQqYFbM_yPQzKH0pd/view",
   links: {
-    github: "https://github.com/Gurvinder-Singh02",
-    twitter: "https://x.com/guri_who",
-    mail: "mailto:gurvindermaksudra@gmail.com",
-    discord: "https://discordapp.com/users/720492511055052862",
-    linkedin: "https://linkedin.com/in/gurvindersingh02",
+    github: "https://github.com/azekowka",
+    twitter: "https://x.com/azekowka",
+    mail: "mailto:gabjtov@gmail.com",
+    discord: "https://discordapp.com/users/magneticflare",
+    linkedin: "https://linkedin.com/in/azizgabitov",
   }
 }
