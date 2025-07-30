@@ -1,6 +1,7 @@
 import { experiencesConfig } from "@/config/experience.config";
 import type { Experience as ExperienceType } from "@/types";
 import type { Metadata } from "next";
+import Image from "next/image";
 import { siteConfig } from "@/config/site.config";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -73,9 +74,11 @@ const Experience = ({ experience }: { experience: ExperienceType }) => {
         <div className="font-semibold flex flex-wrap items-center gap-1 md:gap-2">
           <div className="flex items-center gap-2">
             {experience.company.image && (
-              <img
+              <Image
                 src={experience.company.image}
                 alt={`${experience.company.name} logo`}
+                width={24}
+                height={24}
                 className="w-6 h-6 rounded-full object-cover"
               />
             )}
