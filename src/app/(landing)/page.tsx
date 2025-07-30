@@ -20,7 +20,7 @@ import { projects } from "#site/content";
 
 
 const schema = z.object({
-  query: z.string().min(1, "Search is required"),
+  query: z.string(),
 });
 
 export default function Home() {
@@ -47,6 +47,11 @@ export default function Home() {
   const filteredProjects = useMemo(() => {
     const lowercaseQuery = query.toLowerCase();
     const projectList = sortedFeaturedProjects;
+
+    // If query is empty, return all projects
+    if (!query.trim()) {
+      return projectList;
+    }
 
     return projectList.filter((project) => {
       const title = project.title;
