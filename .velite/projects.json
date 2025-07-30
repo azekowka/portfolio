@@ -3,7 +3,7 @@
     "title": "AI Stock Assistant",
     "slug": "projects/ai-stock",
     "description": "Ask any stock related question, and my chatbot will search latest news, draw charts. Developed utilizing the Groq AI Inference API key; Visualized charts, trades, screens through TradingView UI components.",
-    "date": "2024-08-20T00:00:00.000Z",
+    "date": "2024-12-10T00:00:00.000Z",
     "tags": [
       "Next.js",
       "Typescript",
@@ -47,7 +47,7 @@
     "title": "Tarly AI",
     "slug": "projects/tarlyai",
     "description": "Cursor for Resumes; get a Personal website in 30 seconds.",
-    "date": "2025-01-20T00:00:00.000Z",
+    "date": "2025-06-02T00:00:00.000Z",
     "tags": [
       "Next.js",
       "UI Libraries",

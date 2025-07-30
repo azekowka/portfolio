@@ -3,6 +3,7 @@ import { portfolioConfig } from "@/config/portfolio.config";
 import { Socials } from "@/components/socials";
 import Link from "next/link";
 import ThemeToggler from "@/components/theme/theme-toggler";
+import { LanguagesIcon } from "@/components/icons/languages-icon";
 
 import { Button } from "@/components/ui/button";
 import { skillsConfig } from "@/config/skills.config";
@@ -16,7 +17,14 @@ export default function Hero() {
       <div className="flex justify-between items-center mt-6">
         <h1 className="head-text-sm">{portfolioConfig.name}</h1>
         <div className="flex items-center gap-2">
-
+          <Button
+            variant="ghost"
+            size="icon"
+            className="rounded-full"
+          >
+            <LanguagesIcon size={20} />
+            <span className="sr-only">Languages</span>
+          </Button>
           <ThemeToggler />
         </div>
       </div>
