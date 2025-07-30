@@ -10,7 +10,7 @@ export const navbarConfig: NavItem[] = [
     url: "/experience"
   },
   {
-    title: "Competitions & Hackathons",
+    title: "Hackathons",
     url: "/hackathons"
   },
   {
