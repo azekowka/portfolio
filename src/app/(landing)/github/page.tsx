@@ -46,7 +46,7 @@ export default function Github() {
         
         {/* GitHub Contribution Graph */}
         <div className="mb-8">
-          <h2 className="text-xl font-semibold mb-4">Contribution Activity (950)</h2>
+          <h2 className="text-xl font-semibold mb-4">Contribution Activity (1005)</h2>
           <div className="border rounded-lg p-4 bg-card">
             <Image
               src="https://ghchart.rshah.org/azekowka"
