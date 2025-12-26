@@ -1,41 +1,79 @@
 "use client";
 
-import React, { useState } from "react";
+import { CheckIcon, CircleXIcon, CopyIcon } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
+import React, { useOptimistic, useTransition } from "react";
 
-export const CopyButton = ({ children }: { children: React.ReactNode }) => {
-  const [isCopied, setIsCopied] = useState(false);
+import { cn } from "@/lib/utils";
 
-  const copy = async () => {
-    const sourceCode = extractSourceCode(children);
-    await navigator.clipboard.writeText(sourceCode);
-    setIsCopied(true);
+import { Button } from "./ui/button";
 
-    setTimeout(() => {
-      setIsCopied(false);
-    }, 10000);
-  };
+export const motionIconVariants = {
+  initial: { opacity: 0, scale: 0.8, filter: "blur(2px)" },
+  animate: { opacity: 1, scale: 1, filter: "blur(0px)" },
+  exit: { opacity: 0, scale: 0.8 },
+};
 
-  const extractSourceCode = (node: React.ReactNode): string => {
-    if (typeof node === "string") {
-      return node;
-    }
-    if (Array.isArray(node)) {
-      return node.map(extractSourceCode).join("");
-    }
-    if (React.isValidElement(node)) {
-      const { type, props } = node;
-      const children = React.Children.map(props.children, extractSourceCode)?.join("");
-      const propPairs = Object.entries(props)
-        .map(([key, value]) => `${key}={${JSON.stringify(value)}}`)
-        .join(" ");
-      return `${children}`;
-    }
+export const motionIconProps = {
+  variants: motionIconVariants,
+  initial: "initial",
+  animate: "animate",
+  exit: "exit",
+};
+
+export function CopyButton({
+  value,
+  getValue,
+  className,
+  ...props
+}: {
+  value?: string;
+  getValue?: () => string;
+  className?: string;
+}) {
+  const [state, setState] = useOptimistic<"idle" | "copied" | "failed">("idle");
+  const [, startTransition] = useTransition();
+
+  const getValueToCopy = () => {
+    if (getValue) return getValue();
+    if (value) return value;
     return "";
   };
 
   return (
-    <button disabled={isCopied} onClick={copy}>
-      {isCopied ? "Copied!" : "Copy"}
-    </button>
+    <Button
+      size="icon"
+      variant="secondary"
+      className={cn("z-10 size-6 rounded-md", className)}
+      onClick={() => {
+        startTransition(async () => {
+          try {
+            setState("copied");
+            await navigator.clipboard.writeText(getValueToCopy());
+          } catch {
+            setState("failed");
+          }
+          await new Promise((resolve) => setTimeout(resolve, 1500));
+        });
+      }}
+      {...props}
+    >
+      <AnimatePresence mode="popLayout" initial={false}>
+        {state === "idle" ? (
+          <motion.span key="idle" {...motionIconProps}>
+            <CopyIcon className="size-3" />
+          </motion.span>
+        ) : state === "copied" ? (
+          <motion.span key="copied" {...motionIconProps}>
+            <CheckIcon className="size-3" strokeWidth={3} />
+          </motion.span>
+        ) : state === "failed" ? (
+          <motion.span key="failed" {...motionIconProps}>
+            <CircleXIcon className="size-3" />
+          </motion.span>
+        ) : null}
+      </AnimatePresence>
+      <span className="sr-only">Copy</span>
+    </Button>
   );
-};
+}
