@@ -1,26 +1,24 @@
-import { MetadataRoute } from 'next'
-import { siteConfig } from '@/config/site.config'
+import dayjs from "dayjs";
+import type { MetadataRoute } from "next";
+
+import { SITE_INFO } from "@/config/site";
+import { getAllPosts, getPostsByCategory } from "@/features/blog/data/posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: `${siteConfig.siteUrl}`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 1,
-    },
+  const posts = getAllPosts().map((post) => ({
+    url: `${SITE_INFO.url}/blog/${post.slug}`,
+    lastModified: dayjs(post.metadata.updatedAt).toISOString(),
+  }));
 
-    {
-      url: `${siteConfig.siteUrl}/experience`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.5,
-    },
-    {
-      url: `${siteConfig.siteUrl}/hackathons`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.5,
-    },
-  ]
+  const components = getPostsByCategory("components").map((post) => ({
+    url: `${SITE_INFO.url}/components/${post.slug}`,
+    lastModified: dayjs(post.metadata.updatedAt).toISOString(),
+  }));
+
+  const routes = ["", "/blog", "/components"].map((route) => ({
+    url: `${SITE_INFO.url}${route}`,
+    lastModified: dayjs().toISOString(),
+  }));
+
+  return [...routes, ...posts, ...components];
 }
